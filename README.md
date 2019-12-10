@@ -101,7 +101,7 @@ The **App Admins** SharePoint list is used for setting up in-app permissions for
 
 The **Question Database** contains all elements, including form questions, form answers, and user interface elements that change when a user changes the language. Just like the Incident Database and the App Admins list, access to this list is restricted.
 
-![Broad overview of the solitions technical design](pics\technicaldesign1.png)
+![Broad overview of the solitions technical design](https://github.com/ZOA-account/incident-reporting/blob/master/pics/technicaldesign1.png)
 
 The arrows represent the direction of the information flow; only the Power App writes to the Incident Database. From the perspective of the Power App, the other lists are read only.
 <!--- Use following plantuml code to generate updated versions of this app (remove the <removethis> before doing so)
