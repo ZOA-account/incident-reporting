@@ -17,6 +17,7 @@ This application is released without warranty, and the author cannot be held lia
     * Power Apps for Office 365
     * Power Automate for Office 365
 * SharePoint Online
+* Excel
 * Google Chrome (Power Apps studio works most reliably on Chrome)
 
 > Note: [Microsoft's licensing plans](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-flow-licensing-faq) may have changed by the time you are reading this. The requirements are minimum requirements; it may be possible to deploy this application if your organisation uses more extensive Power-platform licenses.
