@@ -1,5 +1,12 @@
 # Incident Reporting
 
+Contents:App features
+1. [Introduction](#Introduction)
+1. [Prerequisites](#Prerequisites)
+1. [App features](#App-features)
+1. [Before you install](#Before-you-install)
+1. [Other documents](#Other-documents)
+
 ## Introduction
 This is an application powered by the [Microsoft Power platform](https://powerplatform.microsoft.com/) and [SharePoint Online](https://products.office.com/en-us/sharepoint/collaboration) that allows users in your environment to report security incidents.
 
@@ -40,19 +47,7 @@ While this guide is meant to be as detailed as possible to allow anyone with goo
 
 > Note: If you want to do advanced configurations of the application, it is advisable to follow the free online [Microsoft Power Platform Fundamentals](https://docs.microsoft.com/en-us/learn/certifications/power-platform-fundamentals) course.
 
-## Before you continue
-
-While the application is free to deploy if you are already using the required licenses, there are some important things to consider before deploying.
-
-1. This application has no official support channels
-2. The Power Platform is a relatively young part of Microsoft 365, and not all aspects of it are mature
-3. This application is fully dependent on Microsoft's continuation the SaaS applications Power Apps and Power Automate (Flow) and SharePoint integration with it
-4. While making modifications to a Power Apps project requires less knowledge than making modifications to a traditional web application, many modifications to the app (from turning on/off features to adding/removing form questions) have to be done through Power Apps studio
-5. Mid-tier smartphones struggle to render the input form quickly. This issue may be fixed in a future release, however with smartphones becoming more performant this issue may be resolved in a few years. Most laptops seem to render the form fine
-
-## Features
-
-### App features:
+## App features:
   * Create incident reports (both online and offline)
   * Submit incident reports (online only)
   * View own incident reports (both online and offline)
@@ -70,5 +65,17 @@ precedures  (e.g. "What to do in case of fire...")
 * Administrative features (for IT admins, extends the super user features):
   * Set up special roles for security advisors, IT administrators, and country directors (national management staff).
 
-  To install the application, read the [installation guide](InstallationGuide.md).
-  For more information about the design of the application, read the [TechnicalDocumentation](TechnicalDocumentation).
+## Before you install
+
+While the application is free to deploy if you are already using the required licenses, there are some important things to consider before deploying.
+
+1. This application has no official support channels
+2. The Power Platform is a relatively young part of Microsoft 365, and not all aspects of it are mature
+3. This application is fully dependent on Microsoft's continuation the SaaS applications Power Apps and Power Automate (Flow) and SharePoint integration with it
+4. While making modifications to a Power Apps project requires less knowledge than making modifications to a traditional web application, many modifications to the app (from turning on/off features to adding/removing form questions) have to be done through Power Apps studio
+5. Mid-tier smartphones struggle to render the input form quickly. This issue may be fixed in a future release, however with smartphones becoming more performant this issue may be resolved in a few years. Most laptops seem to render the form fine
+
+## Other documents
+
+  * To install the application, read the [installation guide](InstallationGuide.md).
+  * For more information about the design of the application, read the [technical documentation](TechnicalDocumentation).
