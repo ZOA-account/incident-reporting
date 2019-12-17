@@ -84,7 +84,7 @@ AnswerDropDown | CountryDropdown | | IN | India | l'Inde | | | الهند |  |
 
 > Note: We suggest using the [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) standard country codes, but whatever you choose make sure it matches the choice in the **App Admin Country** column. Fill only the translations for the languages you want to enable. The app is in English, and adding languages will involve translation work on your organisation's part
 
-13. [Create a SharePoint group (link to instruction)](https://docs.microsoft.com/en-us/sharepoint/customize-sharepoint-site-permissions#create-a-group) called **Incident Reporting Power Apps Users** in the Incident Reporting Admin team site context
+13. Go to https://\<yourtennant>.sharepoint.com/sites/IncidentReportingAdmin/_layouts/15/user.aspx > **Create Group** > and [create a SharePoint group (link to instruction)](https://docs.microsoft.com/en-us/sharepoint/customize-sharepoint-site-permissions#create-a-group) called **Incident Reporting Power Apps Users**. Make sure your service account is the group owner
 
 1. Go to https://\<yourtennant>.sharepoint.com/sites/IncidentReportingAdmin/_layouts/15/user.aspx > click on **Permission Levels** > **Add a Permission Level**. Create 2 new permission levels called **Power Apps Users (site permission)** and **Power Apps Users (list permission)** at Incident Reporting site level, with the permissions as described below
 

@@ -122,13 +122,33 @@ Open - Allow users to open a Web site, list, or folder in order to access items 
 
 ### Adding a question
 
-1. Add
+Note: the following steps are case sensitive
+
+1. Go to **Incident Database** > **settings cogwheel** > **List settings** > **Create column**
+
+1. Fill in the following information to create a new column:
+
+Field | Fill in | Explanation
+--- | --- | ---
+Column name | Think of a clear and short column name and fill it in | Some of the other column names are **Country**, **Type of Incident**, **Summary**, and suggest using something in that spirit
+Type of information in tis column is:| Single line of text | Use single line of text for every question
+
+3. Click on **OK**
+
+1. Add an item to the **Question database**. Make sure to add the following information
+
+Entity Category | Entity Type | Description | Code | English | French | Portuguese | Swahili | Arabic | Spanish
+--- | --- | --- | --- | --- | --- |--- | --- |--- | ---
+Question | Question | | \<column name you just created> | \<Your question in English> | \<Your question in French> | \<Your question in Portuguese> | \<Your question in Swahili> | \<Your question in Arabic> |  |
+
 
 ### Removing a question
 
 ### Addign an answer
 
 ### Removing an answer
+
+### Adding/removing a language
 
 ### Power Apps Definitions
 Definition | Explanation
