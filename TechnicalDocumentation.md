@@ -120,6 +120,16 @@ Open - Allow users to open a Web site, list, or folder in order to access items 
 
 ## Administration
 
+### Adding a question
+
+1. Add
+
+### Removing a question
+
+### Addign an answer
+
+### Removing an answer
+
 ### Power Apps Definitions
 Definition | Explanation
 --- | ---

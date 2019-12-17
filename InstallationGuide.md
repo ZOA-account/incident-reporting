@@ -86,7 +86,7 @@ AnswerDropDown | CountryDropdown | | IN | India | l'Inde | | | الهند |  |
 
 13. [Create a SharePoint group (link to instruction)](https://docs.microsoft.com/en-us/sharepoint/customize-sharepoint-site-permissions#create-a-group) called **Incident Reporting Power Apps Users** in the Incident Reporting Admin team site context
 
-1. Create 2 new permission levels called **Power Apps Users (site permission)** and **Power Apps Users (list permission)** at Incident Reporting site level, with the permissions as described below
+1. Go to https://\<yourtennant>.sharepoint.com/sites/IncidentReportingAdmin/_layouts/15/user.aspx > click on **Permission Levels** > **Add a Permission Level**. Create 2 new permission levels called **Power Apps Users (site permission)** and **Power Apps Users (list permission)** at Incident Reporting site level, with the permissions as described below
 
 > Note: The permission solution below gives the minimum required permissions for interacting with the Incident Database through PowerApps. It gives PowerApps users limited permissions to SharePoint, so they can access their incidents through the Incident Reporting app, but not through the SharePoint site/list
 
@@ -99,7 +99,7 @@ Open - Allow users to open a Web site, list, or folder in order to access items 
  -| View Pages - View pages in a Web site
  -| Open - Allow users to open a Web site, list or folder in order to access items inside that container
 
-11. Assign the **Incident Reporting Power Apps Users** group the permission **PowerApps Users (site permission)** on site level
+15. Assign the **Incident Reporting Power Apps Users** group the permission **PowerApps Users (site permission)** on site level
 
 1. For each SharePoint lists that the app uses (App Admins, Incident Database, Question Database), [break permission inheritance (search linked page for "break permission inheritance" for instructions)](https://support.office.com/en-us/article/customize-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782) and assign the **Incident Reporting Power Apps Users** group the permission **Power Apps Users (list permission)**
 
