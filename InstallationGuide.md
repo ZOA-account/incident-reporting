@@ -29,13 +29,21 @@ Note: Make sure you have read the readme before installing the application.
 
 ### Creating a SharePoint Site and Lists
 
-1. Create a [SharePoint team site (link to instruction)](https://support.office.com/en-gb/article/create-a-site-in-sharepoint-online-4d1e11bf-8ddc-499d-b889-2b48d10b1ce8) for hosting your SharePoint list "databases" and name it **Incident Reporting Admin**. Choose **Other options** > **Team site** to create a team site without an Office 365 group attached (regular team sites will not work with list templates). Make sure the time zone is set to your primary time zone under **Advanced settings**
+1. Go to https://\<yourtennant>-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement > click on **Create** > **Other options**.
+
+1. Choose the **Team site** template and name it **Incident Reporting Admin**.
+
+1. Choose **English** as your primary language. If you choose another language, you will need to [edit the template file](https://developers.de/blogs/nadine_storandt/archive/2009/03/18/moss-how-to-change-list-site-template-language.aspx) but this solution is not tested by us
+
+1. Under **Advanced settings** make sure to set your primary time zone, and click **Finish** to create the site
+
+> Note: Team sites with an Office 365 attached will not currently work with list templates. This is why we go through **Other options** to create a team site without an Office 365 group.
 
 > Note: This SharePoint site will **not** be accesible for regular users after we set the permissions later on, and therefore you should not publish your PowerApps application on a modern page here, only your "databases." Hint: you might want to preserve names like "Incident Reporting" for a SharePoint site to publish the application on
 
-2. Go to https://\<yourtennant>.sharepoint.com/_layouts/15/ManageFeatures.aspx, find Team Collaboration Lists and click on **Activate** if it is not already active.
+5. Go to https://\<yourtennant>.sharepoint.com/_layouts/15/ManageFeatures.aspx, find Team Collaboration Lists and click on **Activate** if it is not already active
 
-1. Go to your team site in **SharePoint** > click the settings cogwheel > **Site Settings** or, if you are not seeing the button **Site Settings**, go the your site settings url: https://\<yourtennant>.sharepoint.com/sites/IncidentReportingAdmin/_layouts/15/settings.aspx
+1. Go to your **Incident Reporting Admin** team site in **SharePoint** (/sites/incidentreportingadmin/) > click the settings cogwheel > **Site Settings** or, if you are not seeing the button **Site Settings**, go the your site settings url: https://\<yourtennant>.sharepoint.com/sites/IncidentReportingAdmin/_layouts/15/settings.aspx
 
 1. In the Web Designer Galleries column > click **List templates** and upload **app_admins.stp**, **incident_database.stp**, and **question_database.stp** via **FILES** > **Upload Document**
 
@@ -45,11 +53,13 @@ Note: Make sure you have read the readme before installing the application.
     * Name: "Incident Database", description: "List with all reported incidents", upload: incident_database.xlsx
     * Name: "App Admins", description: "List with permissions and roles", upload: app_admins.xlsx-->
 
-5. Go to your site contents at **https://\<yourtennant>.sharepoint.com/sites/IncidentReportingAdmin/_layouts/15/viewlsts.aspx** and click on **New** > **App** > search for **incident** and install the three templates that you will find under the same name as the template (e.g. install template App Admins under the name App Admins)
+8. Go to your site contents at **https://\<yourtennant>.sharepoint.com/sites/IncidentReportingAdmin/_layouts/15/viewlsts.aspx** and click on **New** > **App** > search for **incident** and install the three templates that you will find under the same name as the template (e.g. install template App Admins under the name App Admins)
+
+> Note: If you have selected a language other than English as the main language of the team site, you will not see the list templates
 
 > Note: you should be able to see the three lists appear in your site contents
 
-6. Open the **App Admin** list, click on the **cogwheel > List settings**
+9. Open the **App Admin** list, click on the **cogwheel > List settings**
 
 1. Below **Columns** click on the **Country** column and add your organisation's required countries to the list. Make sure you leave **All** as an option. We suggest using the [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) standard country codes, e.g.:
     * All
@@ -62,7 +72,7 @@ Note: Make sure you have read the readme before installing the application.
     * ZW
 > Note: Do not change the entry name "All" above unless you have made changes to the Power App to reflect this
 
-6. In the **Question Database** list, click on the **cogwheel > List settings**
+11. In the **Question Database** list, click on the **cogwheel > List settings**
 
 1. Instead of going to list settings, filter the column **Entity Type** by **CountryDropdown**
 
@@ -76,7 +86,7 @@ AnswerDropDown | CountryDropdown | | IN | India | l'Inde | | | الهند |  |
 
 > Note: We suggest using the [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) standard country codes, but whatever you choose make sure it matches the choice in the **App Admin Country** column. Fill only the translations for the languages you want to enable. The app is in English, and adding languages will involve translation work on your organisation's part
 
-9. [Create a SharePoint group (link to instruction)](https://docs.microsoft.com/en-us/sharepoint/customize-sharepoint-site-permissions#create-a-group) called **Incident Reporting Power Apps Users** in the Incident Reporting Admin team site context
+14. [Create a SharePoint group (link to instruction)](https://docs.microsoft.com/en-us/sharepoint/customize-sharepoint-site-permissions#create-a-group) called **Incident Reporting Power Apps Users** in the Incident Reporting Admin team site context
 
 1. Create 2 new permission levels called **Power Apps Users (site permission)** and **Power Apps Users (list permission)** at Incident Reporting site level, with the permissions as described below
 
@@ -114,8 +124,7 @@ Open - Allow users to open a Web site, list, or folder in order to access items 
 1. Click on **Add data source > SharePoint** and connect your own SharePoint lists to your app: Admins, Incident Database, and Question Database.
 1. Once you have set up these lists, right click on **App** in the tree view > **Run OnStart**
 1. If you have done everything correctly, you should see the text appear.
-1. Click on File > Save
-
+1. Click on **File** > **Save** >  **Publish**
 ### Importing the Power Automate flow
 
 1. Open [Power Automate](https://emea.flow.microsoft.com/en-us/) and click on **My flows** > **Import** and select/upload **power_automate_flow.zip** from the downloaded repository
