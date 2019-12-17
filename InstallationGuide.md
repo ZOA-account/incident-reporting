@@ -15,7 +15,7 @@ Note: Make sure you have read the readme before installing the application.
 
 ## Installation
 
-> Note: it is advised to set up the SharePoint site, Power App, and Power Automate flow using a service account (e.g. automation@yourorganisation.org). This way the app is not connected to a regular user's account.
+> Note: it is advised to set up the SharePoint site, Power App, and Power Automate flow using a service account (e.g. automation@yourorganisation.org). This way the app is not connected to a regular user's account. Do not activate multi-factor authentication (MFA) on this service account, as MFA would require you to periodically activate your Power Automate flow connections
 
 ### Downloading the project from GitHub
 
@@ -120,7 +120,7 @@ Open - Allow users to open a Web site, list, or folder in order to access items 
 
 1. Open [Power Automate](https://emea.flow.microsoft.com/en-us/) and click on **My flows** > **Import** and select/upload **power_automate_flow.zip** from the downloaded repository
 
-1. [Import the Incicident Reproting package (link to instruction)](https://docs.microsoft.com/en-us/power-platform/admin/environment-and-tenant-migration#importing-a-canvas-app)
+1. [Import the Incicident Reporting package (link to instruction)](https://docs.microsoft.com/en-us/power-platform/admin/environment-and-tenant-migration#importing-a-canvas-app)
 1. Make sure that under **IMPORT SETUP** "Create as new" is selected; optionally rename your flow here
 1. Under **Related resources** you will find a your SharePoint, Outlook, Office 365 Users-connections. Under **Select during import** select your admin or service account to make the connection to these resources.
 > If you do not see any connections, first click on **Create new** and create the required connection. You can also find the **Connections** interface from Power **Automate > Connections**. You will have to have connections between the account that owns the Flow and Power App and these services: **SharePoint Connection, Office 365 Outlook Connection, Office 365 Users Connection**    
