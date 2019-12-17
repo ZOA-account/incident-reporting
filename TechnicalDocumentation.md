@@ -88,7 +88,7 @@ If you follow the installation guide closely, you will have a SharePoint site wh
 End users, including country directors and programme managers will only have access through the power app. The the table [**Access overview**](#Access-overview) and [**Permissions per incident status**](#Permissions-per-incident-status) give an overview of what the default permissions give access to
 
 ### Access overview:
-- | Access to SharePoint (lists) | Access to own incidents in app | Access to all country incidents in app | Access to incididents in app if mentioned as PGM
+User Role | Access to SharePoint (lists) | Access to own incidents in app | Access to all country incidents in app | Access to incididents in app if mentioned as PGM
 --- | --- | --- | --- | ---
 **End user** | No | Yes | No | Yes
 **Country Director** | No | Yes | Yes | Yes
@@ -98,7 +98,7 @@ End users, including country directors and programme managers will only have acc
 
 ### Permissions per incident status:
 
-- | Open | Finalised by CD | Closed
+User Role | Open | Finalised by CD | Closed
 --- | --- | --- | ---
 **End user (own tickets only)** | Read/Write | Read | Read
 **Country Director** | Read/Write | Read (CD can change status to Finalised, but cannot change it back)| Read
