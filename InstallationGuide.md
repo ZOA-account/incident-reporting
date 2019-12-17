@@ -99,9 +99,9 @@ Open - Allow users to open a Web site, list, or folder in order to access items 
  -| View Pages - View pages in a Web site
  -| Open - Allow users to open a Web site, list or folder in order to access items inside that container
 
-15. Go to https://azonotabusiness.sharepoint.com/sites/IncidentReportingAdmin2/_layouts/15/groups.aspx and assign the **Incident Reporting Power Apps Users** group the permission **PowerApps Users (site permission)**
+15. Go to https://\<yourtennant>.sharepoint.com/sites/IncidentReportingAdmin/_layouts/15/user.aspx > **Grant Permissions** > enter **Incident Reporting Power Apps Users** > **SHOW OPTIONS** > Uncheck **Send an email invitation** > Select permission level **Power Apps Users (sites permission)** > **Share**
 
-1. For each SharePoint lists that the app uses (App Admins, Incident Database, Question Database), [break permission inheritance (search linked page for "break permission inheritance" for instructions)](https://support.office.com/en-us/article/customize-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782) and assign the **Incident Reporting Power Apps Users** group the permission **Power Apps Users (list permission)**
+1. Do the following for each of the SharePoint lists. Go to https://\<yourtennant>.sharepoint.com/sites/IncidentReportingAdmin/_layouts/15/viewlsts.aspx > click on the three option dots next to the list > **Settings** > **Permissions for this list** > **Stop Inheriting Permissions** > **OK** > **Grant Permissions** > enter **Incident Reporting Power Apps Users** > **SHOW OPTIONS** > Uncheck **Send an email invitation** > Select permission level **Power Apps Users (list permission)** > **Share**. Make sure to select **Power Apps Users (list permission)** instead of **Power Apps Users (sites permission)**
 
 > Note: See [Assigning permissions](#Assigning-Permissions) for more information on permissions
 
