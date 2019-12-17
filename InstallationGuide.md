@@ -99,7 +99,7 @@ Open - Allow users to open a Web site, list, or folder in order to access items 
  -| View Pages - View pages in a Web site
  -| Open - Allow users to open a Web site, list or folder in order to access items inside that container
 
-15. Assign the **Incident Reporting Power Apps Users** group the permission **PowerApps Users (site permission)** on site level
+15. Go to https://azonotabusiness.sharepoint.com/sites/IncidentReportingAdmin2/_layouts/15/groups.aspx and assign the **Incident Reporting Power Apps Users** group the permission **PowerApps Users (site permission)**
 
 1. For each SharePoint lists that the app uses (App Admins, Incident Database, Question Database), [break permission inheritance (search linked page for "break permission inheritance" for instructions)](https://support.office.com/en-us/article/customize-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782) and assign the **Incident Reporting Power Apps Users** group the permission **Power Apps Users (list permission)**
 
