@@ -101,7 +101,7 @@ Open - Allow users to open a Web site, list, or folder in order to access items 
 
 15. Go to https://\<yourtennant>.sharepoint.com/sites/IncidentReportingAdmin/_layouts/15/user.aspx > **Grant Permissions** > enter **Incident Reporting Power Apps Users** > **SHOW OPTIONS** > Uncheck **Send an email invitation** > Select permission level **Power Apps Users (sites permission)** > **Share**
 
-1. Do the following for each of the SharePoint lists. Go to https://\<yourtennant>.sharepoint.com/sites/IncidentReportingAdmin/_layouts/15/viewlsts.aspx > hover over the list and click on the three option dots next to the list > **Settings** > **Permissions for this list** > **Stop Inheriting Permissions** > **OK** > **Grant Permissions** > enter **Incident Reporting Power Apps Users** > **SHOW OPTIONS** > Uncheck **Send an email invitation** > Select permission level **Power Apps Users (list permission)** > **Share**. Make sure to select **Power Apps Users (list permission)** instead of **Power Apps Users (sites permission)**
+1. Do the following for each of the SharePoint lists. Go to https://\<yourtennant>.sharepoint.com/sites/IncidentReportingAdmin/_layouts/15/viewlsts.aspx > click on the three option dots that appear next to the list when you hover over it > **Settings** > **Permissions for this list** > **Stop Inheriting Permissions** > **OK** > **Grant Permissions** > enter **Incident Reporting Power Apps Users** > **SHOW OPTIONS** > Uncheck **Send an email invitation** > Select permission level **Power Apps Users (list permission)** > **Share**. Make sure to select **Power Apps Users (list permission)** instead of **Power Apps Users (sites permission)**
 
 > Note: See [Assigning permissions](#Assigning-Permissions) for more information on permissions
 
