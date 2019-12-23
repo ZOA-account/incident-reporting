@@ -114,11 +114,7 @@ Open - Allow users to open a Web site, list, or folder in order to access items 
 
 1. Wait for the upload process to complete
 
-NAME | RESOURCE TYPE | IMPORT SETUP | ACTION
---- | --- | --- | --- | ---
-Incident Reporting | App | Create as new | wrench icon
-
-3. If you see the table above, click on the **Import** button
+1. Click on the **Import** button
 
 1. Before starting the application, you will need to update the connections between the application and SharePoint. You can do this from [the main Power Apps](https://make.powerapps.com/) page by clicking on the three dots next to the application > **Edit**
 
