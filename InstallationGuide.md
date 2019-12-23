@@ -169,11 +169,11 @@ Incident Reporting | App | Create as new | wrench icon
 
 1. Go to https://www.utctime.net/ and scroll to the header **UTC Date and Time in Various Formats** > copy the UTC formatted time e.g. **2019-12-20T13:34:59Z**
 
-1. Click on the action **Before turning flow on, update time in input below** and replace the time with the copied time. Make sure to remove any spaces that you may have accidentally added when pasting
+1. Click on the action **Last Edited** and replace the time with the copied time. Make sure to remove any spaces that you may have accidentally added when pasting
 
 1. Click **Save** to save
 
-> Note: the flow uses the **App Admins** list to find the the Security Advisors and/or Country Directors. Make sure that this list is accurately filled in: [Adding people to the App Admins list](#Adding-people-to-the-App-Admins-list)
+> Note: the flow uses the **App Admins** list to find the the Security Advisors and/or Country Directors. Make sure that this list is accurately filled in: [Adding people to the App Admins list](#Adding-people-to-the-App-Admins-list). If the App Admins list is empty, the application cannot inform the country director or security advisor.
 
 ---
 ## Assigning permissions
