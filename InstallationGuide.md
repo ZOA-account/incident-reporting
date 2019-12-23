@@ -10,6 +10,7 @@ Contents:
     1. [Sharing access to the lists](#Sharing-access-to-the-lists)
     1. [Adding people to the App Admins list](#Adding-people-to-the-App-Admins-list)
     1. [Sharing the Power App](#Sharing-the-Power-App)
+1. [Setting up a Power BI dashboard](#Setting-up-a-Power-BI-dashboard)
 
 > Note: Make sure you have read the readme before installing the application
 ---
@@ -217,3 +218,7 @@ m.huisman@contoso.ngo | UG | PGM
 1. Click on **Apps** > select the Incident Reporting app > **Share**
 1. Select your users or user group
 1. Uncheck **Send an email invitiation to new users** > click on **share**
+---
+## Setting up a Power BI dashboard
+
+Read the [Power BI documentation](#PbiDocumentation.md) for more information
