@@ -157,9 +157,19 @@ Open - Allow users to open a Web site, list, or folder in order to access items 
 
 1. Click on **My flows**
 
-1. Select **Incident Reporting: NEW ITEM** and click on **Edit**
+1. Click on **New** > **Instant-from blank** > **Skip** (next to Create and Cancel)
 
-1. Click on the trigger (**When an item is created**) and update the **Site Address** to the Incident Reporting Admin site, and the **List Name** to the **Incident Database** SharePoint list
+1. Click on **Untitled** in the top left corner and type **Incident Reporting: New Item**
+
+1. Click on **Search connectors and triggers** and search for **When an item is created**. Click on **When an item is created** in the results
+
+1. In the trigger, select your Incident Reporting Admin site address and the list **Incident Database**
+
+1. Open a new browser tab and go to https://emea.flow.microsoft.com/ > **My flows** > Select **Incident Reporting: Copy** and click on **Edit**
+
+1. You will see 1 trigger (**When an item is created**) followed by 4 actions. For each of the actions (starting with **Initialize variable**, so skip the trigger in the top) click on the three dots in the top right > **Copy to my clipboard**
+
+1. Once you have all 4 actions copied, go back to your other browser tab (with your **Incident Reporting: New Item** flow) and click on **New step** > **My clipboard** (next to the Premium and Custom tabs) > click on the first action you copied. Repeat this step until you have all 4 actions in the correct order in your new flow.
 
 1. Click on the condition action (**Condition**) to open it. Click on **Get item (App Admins)** and update the **Site Address** to the Incident Reporting Admin site, and the **List Name** the **App Admins** SharePoint list
 

@@ -57,6 +57,7 @@ database "SharePoint Online" {
 
 The design of the application has a few central requirements:
 1. Affordability
+
 1. Support multiple languages
 1. Support offline functionality
 
