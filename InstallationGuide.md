@@ -11,12 +11,12 @@ Contents:
     1. [Adding people to the App Admins list](#Adding-people-to-the-App-Admins-list)
     1. [Sharing the Power App](#Sharing-the-Power-App)
 
-Note: Make sure you have read the readme before installing the application
-
+> Note: Make sure you have read the readme before installing the application
+---
 ## Installation
 
 > Note: it is advised to set up the SharePoint site, Power App, and Power Automate flow using a service account (e.g. automation@yourorganisation.org). This way the app is not connected to a regular user's account. Do not activate multi-factor authentication (MFA) on this service account, as MFA would require you to periodically activate your Power Automate flow connections
-
+---
 ### Downloading the project from GitHub
 
 1. Go to the [GitHub repository](https://github.com/ZOA-account/incident-reporting/) for the application
@@ -27,6 +27,7 @@ Note: Make sure you have read the readme before installing the application
     * power_apps_application.zip
     * power_automate_flow.zip
 
+---
 ### Creating a SharePoint Site and Lists
 
 1. Go to https://\<yourtennant>-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement > click on **Create** > **Other options**
@@ -106,42 +107,75 @@ Open - Allow users to open a Web site, list, or folder in order to access items 
 > Note: See [Assigning permissions](#Assigning-Permissions) for more information on permissions
 
 > Note: The access may be expanded if the user has additional permissions on the SharePoint. For people who can only use the PowerApp, use above permissions and make sure they do not have additional permissions
-
+---
 ### Importing the Power App
 
-1. Open [Power Apps studio](https://make.powerapps.com/) click on **Apps** > **Import canvas app** > select and upload **power_apps_application.zip** from the downloaded repository
+1. Open [Power Apps studio](https://make.powerapps.com/), log in if necessary, click on **Apps** > **Import canvas app** > select and upload **power_apps_application.zip** from the downloaded repository
 
-1. Make sure that under **IMPORT SETUP** "Create as new" is selected; optionally rename your application here
-1. Under **Related resources** you will find a SharePoint connection. Under **Select during import** select your admin or service account to make the connection to these resources.
-> If you do not see any connections, first click on **Create new** and create the required connection. You can also find the **Connections** interface from Power **Automate > Connections**. You will have to have connections between the account that owns the Flow and Power App and these services: **SharePoint Connection, Office 365 Outlook Connection, Office 365 Users Connection**, but the Power App will only use SharePoint Connection
+1. Wait for the upload process to complete
 
-4. Click on **Import** to import the application
+NAME | RESOURCE TYPE | IMPORT SETUP | ACTION
+--- | --- | --- | --- | ---
+Incident Reporting | App | Create as new | wrench icon
 
-1. After a while the application will be installed
-1. Find the application under **Apps** > click on it > **Edit**
-1. Click on **View > Data sources** and remove App Admins, Incident Database, and Question Database.
-1. Click on **Add data source > SharePoint** and connect your own SharePoint lists to your app: Admins, Incident Database, and Question Database.
-1. Once you have set up these lists, right click on **App** in the tree view > **Run OnStart**
-1. If you have done everything correctly, you should see the text appear.
+3. If you see the table above, click on the **Import** button
+
+1. Before starting the application, you will need to update the connections between the application and SharePoint. You can do this from [the main Power Apps](https://make.powerapps.com/) page by clicking on the three dots next to the application > **Edit**
+
+> Note: until you fix the connections between the application and SharePoint, text won't properly display in the application
+
+5. If your browser asks for access to your location information, you must share it for the location sharing functionality to work. The location data is only used by the Power App, and is not stored anywhere
+
+1. Click on **View** in the menu bar > **Data sources**
+
+1. Remove the Incident Database, App Admins, and Question Database connections by hovering over the connectsion and clicking the thee dots > **Remove** 
+
+1. Click **Add data source** > **New connection** > search for **SharePoint** and select it
+
+1. Select the **Incident Reporting Admin** > select **App Admins**, **Incident Database**, and **Question Database** > click **Connect**
+
+1. When prompted with: **The data source 'Incident Database' you are trying to add has the same name as an existing collection. Would you like to replace the existing collection? Any local data saved in the collection will be lost.** > click **Yes** and wait a short while for Power Apps studio to make the connections
+
+1. Right click on **App** in the tree view > **Run OnStart**
+
+1. If you have done everything correctly, you should see the text appear
+
 1. Click on **File** > **Save** >  **Publish**
+
+---
 ### Importing the Power Automate flow
 
-1. Open [Power Automate](https://emea.flow.microsoft.com/en-us/) and click on **My flows** > **Import** and select/upload **power_automate_flow.zip** from the downloaded repository
+1. Open [Power Automate](https://emea.flow.microsoft.com/en-us/) and click on **My flows** > **Import** > select and upload **power_automate_flow.zip** from the downloaded repository
 
-1. [Import the Incicident Reporting package (link to instruction)](https://docs.microsoft.com/en-us/power-platform/admin/environment-and-tenant-migration#importing-a-canvas-app)
-1. Make sure that under **IMPORT SETUP** "Create as new" is selected; optionally rename your flow here
-1. Under **Related resources** you may find your SharePoint, Outlook, Office 365 Users-connections. If you don't, skip to the next step. If you do see the connections, select your service account under **Select during import** for each of the connections.
-> If you do not see any connections once you click through to select them, first click on **Create new** and create the required connection. You can also find the **Connections** interface from Power **Automate > Connections**. You will have to have connections between the account that owns the Flow and Power App and these services: **SharePoint Connection, Office 365 Outlook Connection, Office 365 Users Connection**    
-> You may have to do this for each of the three connections.
-4. Click on **Import** to import the flow
+1. Wait for the upload process to complete
 
-1. Find the flow under **My flows** > click on it > **Edit**
-1. Set the **Site Address** and **List Name** to your location of the **Incident Database**
-1. Update the action that is called **Before turning flow on, update time in input below: www.utctime.net** with your current time. Remember to update this time every time you turn the flow on after it has been turned of, otherwise Flow will see all items in the list as new items. You can find the UTC time format at [this website](https://www.utctime.net/)
-1. Click on **Condition** to open it, then click to open **If yes**
-1. In the **If yes** find the **Get items (App Admins)** and set the **Site Address** and **List Name** to your location of the **App Admins** list
-1. When you are ready, click on Save. Check if the flow is turned on: if not, turn it on
+1. Below **IMPORT SETUP** click on **Select during import** for each of the three connections listed. Select a your own connection and click Save. If you do not see a connection listed, read the note below
 
+* SharePoint Connection
+* Office 365 Outlook Conncection
+* Office 365 Users Connection
+
+> Note: If you do not see any connections once you click on **Select during import**, first click on **Create new** and create the required connection. You can also find the **Connections** interface from Power **Automate > Connections**. You will have to have connections between the account that owns the Flow and Power App and these services: **SharePoint Connection, Office 365 Outlook Connection, Office 365 Users Connection**   
+
+4. Click in **Import** and wait for the import to process
+
+1. Click on **My flows**
+
+1. Select **Incident Reporting: NEW ITEM** and click on **Edit**
+
+1. Click on the trigger (**When an item is created**) and update the **Site Address** to the Incident Reporting Admin site, and the **List Name** to the **Incident Database** SharePoint list
+
+1. Click on the condition action (**Condition**) to open it. Click on **Get item (App Admins)** and update the **Site Address** to the Incident Reporting Admin site, and the **List Name** the **App Admins** SharePoint list
+
+1. Go to https://www.utctime.net/ and scroll to the header **UTC Date and Time in Various Formats** > copy the UTC formatted time e.g. **2019-12-20T13:34:59Z**
+
+1. Click on the action **Before turning flow on, update time in input below** and replace the time with the copied time. Make sure to remove any spaces that you may have accidentally added when pasting
+
+1. Click **Save** to save
+
+> Note: the flow uses the **App Admins** list to find the the Security Advisors and/or Country Directors. Make sure that this list is accurately filled in: [Adding people to the App Admins list](#Adding-people-to-the-App-Admins-list)
+
+---
 ## Assigning permissions
 
 > Note: make sure to test thoroughly before sharing the application with your colleagues
