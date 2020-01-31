@@ -12,7 +12,7 @@ Contents:
 <br/><br/>
 ## One pager
 
-![One Pager of the Project](pics/onepager.png "One Pager of the Project")
+![One Pager of the Project](pics/one_pager.png "One Pager of the Project")
 
 <br/><br/>
 ## Introduction
