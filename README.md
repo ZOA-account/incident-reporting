@@ -2,11 +2,17 @@
 
 Contents:
 1. [Introduction](#Introduction)
+1. [One Pager](#One-Pager)
 1. [Prerequisites](#Prerequisites)
 1. [App features](#App-features)
 1. [Before you install](#Before-you-install)
 1. [Feedback, feature requests, and questions](#Feedback,-feature-requests,-and-questions)
 1. [Other documents](#Other-documents)
+
+<br/><br/>
+## One Pager
+
+![One Pager of the Project](pics/OnePager.png "One Pager of the Project")
 
 <br/><br/>
 ## Introduction
