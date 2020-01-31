@@ -10,7 +10,7 @@ Contents:
 1. [Other documents](#Other-documents)
 
 <br/><br/>
-## One Pager
+## One pager
 
 ![One Pager of the Project](pics/OnePager.png "One Pager of the Project")
 
