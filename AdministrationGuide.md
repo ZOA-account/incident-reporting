@@ -38,7 +38,7 @@ Type of information in tis column is:| Single line of text | Use single line of 
 
 Entity Category | Entity Type | Description | Code | English | French | Portuguese | Swahili | Arabic | Spanish
 --- | --- | --- | --- | --- | --- |--- | --- |--- | ---
-Question | Question | | \<column name you just created> | \<Your question in English> | \<Your question in French> | \<Your question in Portuguese> | \<Your question in Swahili> | \<Your question in Arabic> |  |
+Question | Question | | \<column name you just created> | \<Your question in English> | \<Your question in French> | \<Your question in Portuguese> | \<Your question in Swahili> | \<Your question in Arabic> | \<Your question in Spanish> |
 
 5. In Power Apps studio > select the **EditForm** in the **Tree view** > Click on **Edit fields** in the menu on the right >  click on **+ Add field** > Select the datacard that matches your newly created column
 

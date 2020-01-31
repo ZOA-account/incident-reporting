@@ -98,5 +98,9 @@ If you have feedback on this project, feel free to [create an issue](#https://gi
 <br/><br/>
 ## Other documents
 
-  * To install the application, read the [installation guide](InstallationGuide.md)
-  * For more information about the design of the application, read the [technical documentation](TechnicalDocumentation.md)
+* To install the application, read the [installation guide](InstallationGuide.md)
+* For more information about the design of the application, read the [technical documentation](TechnicalDocumentation.md)
+* To learn how to administer the application, read the [administration guide](AdministrationGuide.md)
+* To read more about adding languages to the app, read the [language documentation](MultiLanguageDocumentation.md)
+* To learn more about the Question Database, read the [Question Database Documenation](#QuestionDatabaseDocumentation.md)
+* To learn how to create a Power BI dashboard, read the [Power BI documentation](PbiDocumentation.md)
