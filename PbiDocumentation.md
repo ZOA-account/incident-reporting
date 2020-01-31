@@ -115,4 +115,3 @@ Once you have uploaded your Power BI dashboard, you need to configure the schedu
 1. From here, you can select options like the 'Refresh frequency', 'Time zone', etc. 
 
 [To top](#Migration-guide-.pbit-file-to-new-tenant)
-

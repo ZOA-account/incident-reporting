@@ -1,6 +1,6 @@
 # Technical Documentation Incident Reporting application
-by Klaas de Jong
 
+<br/><br/>
 ## Table of contents
 
 1. [Technical design](#Technical-design)
@@ -16,6 +16,7 @@ by Klaas de Jong
     1. [Removing a question](#Removing-a-question)
     1. [To bottom](#Navigation-in-this-document)
 
+<br/><br/>
 # Technical design
 
 ## Introduction
@@ -72,6 +73,7 @@ To enable multiple languages we have opted to do a lookup from Power Apps to a l
 
 To enable offline functionality, the app is designed to copy the contents of the three connected SharePoint lists to the local storage of the phone. The ability to create incidents while offline is currently in preview, and may be buggy. It is not possible to upload attachments while offline
 
+<br/><br/>
 # Security
 
 ## Disclaimer
@@ -118,10 +120,10 @@ Open - Allow users to open a Web site, list, or folder in order to access items 
  -| View Items - View items in lists and documents in document libraries
  -| View Pages - View pages in a Web site
  -| Open - Allow users to open a Web site, list or folder in order to access items inside that container
-
+<br/><br/>
 ## Administration
-
-### Adding a question
+<br/><br/>
+### Adding an open question
 
 Note: the following steps are case sensitive
 
@@ -142,10 +144,21 @@ Entity Category | Entity Type | Description | Code | English | French | Portugue
 --- | --- | --- | --- | --- | --- |--- | --- |--- | ---
 Question | Question | | \<column name you just created> | \<Your question in English> | \<Your question in French> | \<Your question in Portuguese> | \<Your question in Swahili> | \<Your question in Arabic> |  |
 
+### Key properties
+
+Element | Property | Formula
+--- | --- | ---
+DataCardKey | Text | LookUp(questionCollection,Title="Question"&&Entity_x0020_Type="Question"&&Code="Location").Translation
+sdf | sdf | sdf
+
+
+
 
 ### Removing a question
 
-### Addign an answer
+
+
+### Adding an answer
 
 ### Removing an answer
 
