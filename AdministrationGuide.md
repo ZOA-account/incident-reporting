@@ -103,10 +103,16 @@ Contributing_x0020_Factors: ContributingFactorsValue.Text
 
 ### Removing a question
 
-sdf
+[To be added]
 
 ### Adding an answer
 
+[To be added]
+
 ### Removing an answer
 
+[To be added]
+
 ### Adding/removing a language
+
+[To be added]
