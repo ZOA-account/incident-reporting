@@ -2,10 +2,12 @@
 
 In order to deploy the application in your organisation you need to follow 1.1 through 2.3. Setting up a Power BI dashboard is recommended, but can be done after deploying the main application
 
-> Note: Make sure you have read the readme before installing the application
+> Note: Make sure you have read the [readme](README.md) before installing the application
 
+<br/><br/>
 Contents:
 1. [Installation](#Installation)
+    1. [Using this installation guide](#User-this-installation-guide)
     1. [Downloading the project from GitHub](#Downloading-the-project-from-GitHub)
     1. [Creating and setting up a SharePoint Site](#Creating-and-setting-up-a-SharePoint-Site)
     1. [Creating and setting up SharePoint Lists](#Creating-and-setting-up-SharePoint-Lists)
@@ -26,16 +28,29 @@ Contents:
 It is advised to set up the SharePoint site, Power App, and Power Automate flow using a service account (e.g. automation@yourorganisation.org). This way the app is not connected to a regular user's account. Do not activate multi-factor authentication (MFA) on this service account, as MFA would require you to periodically activate your Power Automate flow connections
 
 <br/><br/>
+## Using this installation guide
+
+This guide refers to direct URLs to SharePoint pages using the placeholder **\<yourtennant>**
+
+Example: **https://\<yourtennant>-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement**
+
+Insert your tennant name into the placeholder to create a working direct link to your SharePoint environment
+
+Example: If your tenant name is refugeecare > **https://refugeecare-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement**
+
+
+<br/><br/>
 ## Downloading the project from GitHub
 
 1. Go to the [GitHub repository](https://github.com/ZOA-account/incident-reporting/) for the application
 1. Click on **Clone or dowload** > **Download ZIP**. Extract the archive on your computer. We will need the files later in the process
-    * question_database.stp
-    * incident_database.stp
     * app_admins.stp
+    * incident_database.stp
     * power_apps_application.zip
     * power_automate_flow.zip
-    * app_admin_flow.zip
+    * power_bi_dashboard.pbit
+    * question_database.stp
+    * question_database.xlsx
 
 <br/><br/>
 ## Creating and setting up a SharePoint Site

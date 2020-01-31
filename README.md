@@ -99,4 +99,4 @@ If you have feedback on this project, feel free to [create an issue](#https://gi
 ## Other documents
 
   * To install the application, read the [installation guide](InstallationGuide.md)
-  * For more information about the design of the application, read the [technical documentation](TechnicalDocumentation)
+  * For more information about the design of the application, read the [technical documentation](TechnicalDocumentation.md)
