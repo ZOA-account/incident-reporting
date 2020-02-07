@@ -82,7 +82,7 @@ Example: If your tenant name is refugeecare > **https://refugeecare-admin.sharep
     * Name: "Incident Database", description: "List with all reported incidents", upload: incident_database.xlsx
     * Name: "App Admins", description: "List with permissions and roles", upload: app_admins.xlsx-->
 
-4. Go to your site contents at **https://\<yourtennant>.sharepoint.com/sites/IncidentReportingAdmin/_layouts/15/viewlsts.aspx** and click on **New** > **App** > search for **incident** and install the three templates that you will find under the same name as the template (e.g. install template App Admins under the name App Admins)
+4. Go to your site contents at **https://\<yourtennant>.sharepoint.com/sites/IncidentReportingAdmin/_layouts/15/viewlsts.aspx** and click on **New** > **App** > search for the three templates you uploaded in the last step and install them using the same name as the template (e.g. install template App Admins under the name App Admins)
 
 > Note: If you have selected a language other than English as the main language of the team site, you will not see the list templates
 
